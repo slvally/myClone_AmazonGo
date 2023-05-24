@@ -1,0 +1,338 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+
+
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+/* Clear CSS End */
+
+
+/* Import */
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+/* material icon */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* CSS Global */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.global-container {
+    /* min-width: 780px; */
+    min-width: 1033px;
+    height: 800px;
+    /* border: 2px solid blue; */
+}
+
+
+/* CSS Style */
+
+
+/* Navbar */
+.navbar {
+    height: 55px;
+    width: 100%;
+    background-color: rgb(19, 25, 33);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    min-width: 100%;
+    min-height: 100%;
+    cursor: pointer;
+}
+.deliver-to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(19, 25, 33);
+    padding: 5px;
+}
+.deliver-to:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.search-box {
+    display: flex;
+    height: 40px;
+    font: 16px;
+    width: 880px;
+}
+.src-cat button {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+.src-cat button:hover {
+    background-color: rgb(228, 228, 228);
+}
+.src-inp {
+    width: 100%;
+}
+.src-inp input {
+    padding: 12px;
+    border: none;
+    width: 100%;
+    min-width: 100px;
+}
+.src-icon {
+    height: 100%;
+}
+.src-icon button {
+    height: 100%;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: rgb(243, 168, 71);
+    cursor: pointer;
+}
+.src-icon button:hover{
+    background-color: rgb(221, 146, 47);
+}
+.country {
+    display: flex;
+    border: 1px solid rgb(19, 25, 33);
+    padding: 5px;
+}
+.country:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.sign-in {
+    border: none;
+    padding: 5px;
+    height: 60%;
+    min-width: max-content;
+    border: 1px solid rgb(19, 25, 33);
+}
+.sign-in:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.return {
+    border: none;
+    padding: 5px;
+    height: 60%;
+    min-width: max-content;
+    border: 1px solid rgb(19, 25, 33);
+}
+.return:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.cart {
+    border: none;
+    padding: 5px;
+    height: 60%;
+    min-width: max-content;
+    border: 1px solid rgb(19, 25, 33);
+}
+.cart:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* Navbar 2 */
+.navbar2 {
+    height: 35px;
+    width: 100%;
+    background-color: rgb(35, 47, 62);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* gap: 8px; */
+}
+.navbar2 li {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.navbar2 li button {
+    border: none;
+    background-color: rgb(35, 47, 62);
+    color: white;
+    border: 1px solid rgb(35, 47, 62);
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.navbar2 li button:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+/* Content */
+.content {
+
+}
+.img-slider {
+    margin: 10px 10px 0px 10px;
+    display: block;
+}
+.img-slider img{
+    width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.c1 img {
+    width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.c2 img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.c3 img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 24px;
+    line-height: 36px;
+}
+/* Footer */
+.back {
+    width: 100%;
+    background-color: rgb(55, 71, 90);
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+.back:hover {
+    background-color: rgb(68, 82, 100);
+}
+.back p {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer {
+    background-color: rgb(35, 47, 62);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-items: center;
+    justify-content:center;
+    /* column-gap: 20px; */
+    column-gap: 80px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.footer li a {
+    color: white;
+    text-decoration: none;
+
+}
+.footer li:not(:last-child) { 
+    margin-bottom: 10px;  
+}
+.footer li:not(:first-child) { 
+    font-size: 15px;  
+    font-weight: 10;
+    
+}
+.footer li:not(:first-child):hover { 
+    text-decoration: underline;
+}
+.footer ul li:first-child {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
